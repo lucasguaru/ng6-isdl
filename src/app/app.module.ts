@@ -10,6 +10,7 @@ import { ProximosRituaisComponent } from './proximos-rituais/proximos-rituais.co
 import { NormasComponent } from './normas/normas.component';
 import { FotosComponent } from './fotos/fotos.component';
 import { ContatoComponent } from './contato/contato.component';
+import { ContentfulService } from './service/contentful.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { ContatoComponent } from './contato/contato.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [ContentfulService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

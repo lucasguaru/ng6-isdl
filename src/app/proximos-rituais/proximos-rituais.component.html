@@ -1,19 +1,20 @@
 <section id="proximosRituais" class="services">
     <div class="container" *ngIf="rituais.length > 0">
-        <div class="row text-center">
+        <div class="text-center">
             <h2>Próximos Rituais - Ayahuasca</h2>
             <hr class="small">
             <div class="ritual" *ngFor="let ritual of rituais">
                 <h3>{{ritual.dataTexto}}</h3>
-                <img class="img-ritual" alt="Meditação com Ayahuascaem São Paulo dia {{ritual.dataTexto}}" title="Meditação com Ayahuasca em São Paulo dia {{ritual.dataTexto}}"
-                    src="{{ritual.imagem.fields.file.url}}">
+                <p [innerHTML]="ritual.eventoFaceEmbedly"></p>
+                <a [href]="ritual.eventoFace" target="blank"><img class="img-ritual" alt="Meditação com Ayahuasc aem São Paulo dia {{ritual.dataTexto}}" title="Meditação com Ayahuasca em São Paulo dia {{ritual.dataTexto}}"
+                    src="{{ritual.imagem.fields.file.url}}"></a>
                 <p>&nbsp;</p>
             </div>
         </div>
     </div>
 
     <div class="container" *ngIf="rituais.length == 0">
-        <div class="row text-center">
+        <div class="text-center">
             <h2>Próximos Rituais - Desculpe, ainda não temos uma data definida.</h2>
         </div>
     </div>
