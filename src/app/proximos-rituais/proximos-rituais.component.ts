@@ -13,7 +13,7 @@ const util = {
 })
 export class ProximosRituaisComponent implements OnInit {
 
-  private rituais = [];
+  public rituais = [];
   private protocol = 'http';
 
 constructor(private contentfulService: ContentfulService, private sanitizer: DomSanitizer) { 
