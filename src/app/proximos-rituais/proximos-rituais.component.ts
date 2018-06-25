@@ -26,7 +26,7 @@ constructor(private contentfulService: ContentfulService, private sanitizer: Dom
 
 ngOnInit() {
   var ontem = new Date();
-  ontem.setDate(ontem.getDate() - 2);
+  ontem.setDate(ontem.getDate() - 1);
 
   var query = { content_type: 'rituais', order: 'fields.data', 'fields.exibir': true, 'fields.data[gte]': ontem };
 
