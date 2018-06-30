@@ -1,0 +1,15 @@
+.my-right {
+    right: 0px;
+}
+.z1 {
+    z-index: 1;
+}
+.menu-lista {
+    min-width: 100px;
+    text-align: right;
+    padding-right: 15px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+}
